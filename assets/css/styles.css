@@ -1,46 +1,47 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    width: 100vh;
+    overflow-x: hidden;
 }
 
 :root{
 
 }
 
-body{
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-    width: 1430px;
+.navbar_hija1, .navbar_hija2, .elemetos_navbar, .btn_navbar,.texto_navbar2, .modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ico_gif{
-    width: 50px;
+    width: 60px;
 }
 
 .logo_nav{
-    width: 78px;
+    width: 68px;
     border: #ecbd0b 1px solid;
     border-radius: 6px;
     background-color: #323c4c;
     padding: 5px;
-    margin: 5px 20px 0 2%;
+    margin: 3px 20px 0 2%;
 }
 
 .navbar_madre{
-    width: 1430px;
-    height: 120px;
     background-color: #ffffff;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     position: fixed;
 
-}
-
-.navbar_hija1, .navbar_hija2, .elemetos_navbar, .btn_navbar,.texto_navbar2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* navbar hija 1 */
@@ -60,7 +61,6 @@ body{
 .texto_navbar{
     color: #ecbd0b;
     font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* navbar hija2 */
@@ -81,7 +81,7 @@ body{
 }
 
 .btn_navbar{
-    width: 180px;
+    width: 160px;
     height: 50px;
     background-color: #ec101a;
     color:beige;
@@ -89,21 +89,19 @@ body{
     border-color: #ecbd0b;
     border-radius: 7px;
     font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
+/* ---------------------------------------------------------------- */
 .banner{
-    width: 1440px;
-    height: 250px;
     display: block;
     justify-content: center;
     align-items: center;
     border: 1px;
-
 }
+/* ---------------------------------------------------------------- */
 .container_block{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    margin-left: 20px;
 }
 
 .container_doc{
@@ -112,8 +110,7 @@ body{
     grid-template-rows: repeat(2,1fr);
     grid-column-gap: 35px;
     grid-row-gap: 40px;
-    margin: 234px 20px 20px 20px ;
-
+    margin: 10px 20px 20px 20px ;
 }
 
 .ventanas{
@@ -123,10 +120,10 @@ body{
     width: 460px;
     height: auto;
     flex-direction: column;
-    border: #ecbd0b 2px solid;
-    border-radius: 8px;
+    border: none;
+    border-radius: 16px;
     text-align: justify;
-    background-color: #323c4c;
+    background-color: #ffffff;
     box-shadow: 0 0 20px 0 rgb(0 0 0 / 15%)
     
 }
@@ -134,32 +131,174 @@ body{
 .ventanas img{
     width: 90%;
     height: auto;
-    margin-top: 10px;
+    margin-top: 20px;
 }
+
+
 .container_img img{
-    width: 410px;
-    height: auto;
-    margin-top: 234px;
+    width: 395px;
+    height:1200px;
+    margin-top: 10px;
+    margin-left: 30px;
+    object-fit: cover;
 }
 
 .ventanas p{
-    color: #ecbd0b;
-    font-size: 12px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0 30px 20px;
+    color: #323c4c;
+    flex-wrap: wrap;
+    font-size: 14px;
+    padding: 20px 30px 20px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    
 }
 
 .ventanas h3{
     color: #ecbd0b;
-    font-size: 18px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 30px 20px;
+}
+
+.container_img{
+    width: 500px;
+    height: 1190px;
+    object-fit: cover;
+    margin-bottom: 20px;
 
 }
 
+.img_bitcoin{
+    width: 385px;
+    height: 1190px;
+}
+/* -------------------------------------------------------- */
+
 .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 1440px;
     background-color: #323c4c;
+    padding-top: 10px -40px;
+}
+.footer-top{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: auto;
+    height:100px;
+
+}
+
+.footer-bottom{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    width: auto;
+    height:300px;
+}
+
+.container_foot1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    padding: 100px 20px 20px 20px ;
+
+}
+.logo_footer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 150px;
+    margin-top: 20px;
+
+}
+.redes_ico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: #ecbd0b 1px solid;
+    border-radius: 20px;
+    margin: 0 30px;
+}
+
+.redes_ico img{
+    width: 50px;
+    border: none;
+    margin:0 5px;
+}
+
+.tasse_cafe img{
+    width: 400px;
+    border: none;
+    margin:0 30px;
+}
+/* --------------------------------------------- */
+.container_foot2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+.local_gif{
+    width: 100px;
+    border: none;
+    margin-top: 170px;
+    padding: 0 0 0 20px;
+
+}
+
+.eiffel{
+    width: 300px;
+    height: 70%;
     border: #ecbd0b 2px solid;
-    width: 1430px;
+    border-radius: 16px;
+    margin-top: 110px;
     
+}
+
+/* --------------------------------------------- */
+a {
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+.modal{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(77, 77, 77, .7);
+
+}
+
+.modal:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal_content{
+    background-color: #ffffff;
+    padding: 1.5em 2em;
+    width: 600px;
+    max-width: 80%;
+    border-radius: 16px;
+    position: relative;
+
+}
+
+.modal_close{
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    color: #323c4c;
+    text-decoration: none;
+
 
 }
