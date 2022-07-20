@@ -105,8 +105,8 @@
                 <article>
                     <div ><img class="local_gif" src="assets/img/18-location-pin-lineal.gif" alt=""></div>
                 </article>
-                <article>
-                    <div><iframe class="eiffel" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10501.253410786669!2d2.2886561914782515!3d48.852234818588585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sco!4v1658205000765!5m2!1sfr!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div> 
+                <article class="eiffel">
+                    <div class="eiffel_img"><iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10501.253410786669!2d2.2886561914782515!3d48.852234818588585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sco!4v1658205000765!5m2!1sfr!2sco" style="border: 2px; border-radius: 16px; border-color: #ecbd0b;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div> 
                 </article>
     
             </section>
@@ -120,36 +120,47 @@
 
 
 <div class="modal" id="contact">
-    <div class="modal_content">
-        <h1>Nuestros datos</h1>
-        <br>
-        <p>Direccion : </p>
-        <p>5 avennue Anatole France <br>75007 paris <br>Paris</p>
-        <P>email : bit_bank@riches.com</P>
-        <p>Phone : +33 01234567890</p>
-        <hr>
-        <form action="mailto:padawane92@msn.com" method="post" enctype="text/plain">
-            <label>Sus nombres : </label><br><br>
-            <input type="text" size="20" name="first_name" value="" placeholder="escribe sus nombres"><br><br>
-
-            <label>sus appellidos : </label><br><br>
-            <input type="text" size="20" name="last_name" value="" placeholder="escribe sus appellidos" ><br><br>
-
-            <label for="">su correo electronico : </label> <br><br>
-            <input type="email" name="yourEmail" value="" placeholder="su correo electronico" ><br><br>
-
-            <label for="email">Quiere que su correo electronico hace parte de nuestra lista? </label><br>
-            <input type="checkbox" name="ckeckbox" id="" value="0"><br><br>
-
-            <label for="">su mensaje :</label><br>
-            <textarea name="name" rows="10" cols="30"></textarea><br><br>
-
-            <input type="submit" name="enviar">
-            <input type="reset" name="reset" value="Reset">
-
-        </form>
+    <section class="modal_content">
+        <article class="contacto_container">
+            <h1>Nuestros datos</h1>
+            <br>
+            <p>Direccion :</p>
+            <p>5 avenue Anatole France <br>75007 paris</p>
+            <P>email : bit_bank@riches.com</P>
+            <p>Phone : +33 01234567890</p>
+            <div class="separador"></div>
+        </article>
+        <article class="formulario">
+            <form class="params_input" action="mailto:padawane92@msn.com" method="post" enctype="text/plain">
+                <div class="nombres">
+                    <label>Sus nombres : </label>
+                    <input type="text" size="44" name="first_name" value="" placeholder="escribe sus nombres">
+                </div>
+                <div>
+                    <label>sus apellidos : </label>
+                    <input type="text" size="44" name="last_name" value="" placeholder="escribe sus appellidos" >
+                </div>
+                <div>
+                    <label for="">su correo electronico : </label>
+                    <input  type="email" name="yourEmail" size="35" value="" placeholder="su correo electronico">
+    
+                </div>
+                <div>
+                    <label for="email">Quiere que su correo electronico hace parte de nuestra <br>lista? </label>
+                    <input type="checkbox" name="ckeckbox" id="" value="0">
+                </div>
+                <div class="container_message">
+                    <label for="">su mensaje :</label><br>
+                <textarea name="name" rows="10" cols="50" ></textarea><br><br>
+                </div>
+                <div class="">
+                    <input type="submit" name="enviar">
+                    <input type="reset" name="reset" value="Reset"> 
+                </div>
+            </form>
+        </article>
         <a href="#" class="modal_close">&times;</a>
-    </div>
+    </section>
 </div>
 
 
