@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit-bank registrate</title>
+    <link rel="stylesheet" href="css/wlther.css">
+    <script src="https://kit.fontawesome.com/158c7cdf40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/img/img-bank.jpeg" type="image/x-icon">
+</head>
+<body>
+    
+    <main>
+        <div>
+            <video muted autoplay loop>
+                <source src="assets/video/istockphoto-1328263866-640_adpp_is.mp4" type="video/mp4">
+            </video>
+            <div class="capa"></div>
+        </div>
+        
+    </main>
+    <form class="encuesta">
+        <div class="armario">
+            <img src="assets/img/img-bank.jpeg" class="bank">
+            <div class="box">
+                <h2>Registro</h2>
+            <div class="closet">
+                <label for="nombre">Nombre completo: </label>
+                <span> <i class="fa-solid fa-user"></i> </span><input type="text" name="nombre" placeholder="nombre completo" required>
+            </div>
+            <div>
+                <label for="documentos">Documento de identidad: </label>
+                <span> <i class="fa-solid fa-address-card"></i> </span><select name="documentos"> 
+                    <option selected disabled value="">tipo de documento</option>
+                    <option value="">Cedula de ciudadania</option>
+                    <option value="">Tarjeta de identidad</option>
+                    <option value="">Cedula de extranjeria</option>
+                </select>
+            </div>
+            <div>
+                <label for="numero">Numero de documento: </label>
+                <span> <i class="fa-solid fa-address-card"></i> </span> <input type="number" name="numero" placeholder="numero de documento">
+            </div>
+            <div>
+                <label for="celular">Numero de celular:</label>
+                <span> <i class="fa-solid fa-mobile-retro"></i> </span> <input type="number" placeholder="numero de celular" name="celular">
+            </div>
+            <div>
+                <label for="fecha">Fecha de nacimiento:</label>
+                <span> <i class="fa-regular fa-calendar-days"></i> </span> <input type="date" placeholder="fecha de nacimiento" name="fecha">
+            </div>
+            <div>
+                <label for="mail">Correo electronico:</label>
+                <span> <i class="fa-solid fa-envelope"></i> </span>  <input type="email" placeholder="correo electronico" name="mail">
+            </div>
+            <div>
+                <button class="barro" type="submit">Iniciar sesión</button>
+            </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,184 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif,  Helvetica;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.slyder{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slyder ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+    height: 100vh;
+}
+
+.slyder li{
+    width: 100%;
+    list-style: none;
+}
+.slyder .efecto{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    80%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.principal{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10%;
+    top:20px;
+    z-index: 1;
+    position: absolute;
+}
+
+.lado-izquierdo{
+    display: flex;
+    flex-direction: column;
+    margin: 0 200px;
+    
+}
+.bit{
+    width: 78%;
+    margin-top: -34px;
+    transform: translateX(-20px);
+    border-radius: 28%;
+}
+
+h2{
+    transform: translate(-3px, -15px);
+    font-size: 3.8rem;
+    font-weight: 800;
+    color:  #ecbd0b;
+}
+
+p{
+    font-size: 2.2rem;
+    transform: translate(-37px, -12px);
+    text-align: center;
+    color:rgb(4 3 2);
+}
+
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+.formulario{
+    background-color: rgba(77, 113, 210, 0.721);
+    margin: 0 340px 0 0;
+    padding: 3px;
+    height: 487px;
+    box-shadow: -1px 10px 22px 10px rgba(0,0,0,0.76);
+    border-radius: 6%;
+    padding: 29px 0 5px;
+}
+
+h1{
+    text-align: center;
+    color:#f0f2f5;
+    font-size: 40px;
+    background:#1a2537da;;
+}
+input[type="email"],
+input[type="password"]{
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor{
+    margin-bottom: 15px;
+}
+
+.btn-inicio{
+    border: none;
+    width: 100%;
+    color:white ;
+    font-size: 20px;
+    background: #1a2537e2;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 27px 0;
+}
+
+.btn-inicio:hover{
+    background-color: cadetblue;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.olvido:hover{
+    text-decoration: underline;
+}
+
+.doses{
+    border: none;
+    width: 100%;
+    color:white ;
+    font-size: 20px;
+    background: #1a2537d6;
+    padding: 15px -2px;
+    border-radius: 56px;
+    cursor: pointer;
+    margin: 17px 0;
+}
+
+.doses:hover{
+    background-color: cadetblue;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width:1130px) {
+    .principal{
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 1fr;
+        justify-content: center;    
+    }
+    .formulario {
+        margin: 0;
+    }
+    .bit{
+        display: none;
+    }
+    h2 {
+        display: none;
+    }
+    p {
+        display: none;
+    }
+
+}

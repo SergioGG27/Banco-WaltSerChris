@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,200;1,600&display=swap');
+:root{
+    --plomo: hsl(162, 2%, 56%);
+    --body-bg-color: hsl(200, 54%, 12%);
+    --text-light-gray: hsl(0, 0%, 90%);
+    --glass-bg-color: hsl(0, 0%, 100%, 0.05);
+    --border-color: hsl(0, 0%, 100%, 0.25);
+    --blur: blur(10px);
+    --button-hover-color: hsl(0, 0%, 0%, 0.3);
+    --blue: hsl(220, 85%, 57%);
+}
+
+.bank{
+    width: 80px;
+    height: 80px;
+    transform: translate(182px, -16px);
+    border-radius: 20px;
+}
+
+.box{
+    display: grid;
+    grid-template-rows: 10fr;
+    grid-row-gap: 8px;
+    justify-content: center;
+    color:  #ecbd0b;
+    font-weight: bold;
+    font-size: 18.3px;
+}
+
+.box span{
+    color: #000;
+}
+.encuesta{
+    position: relative;
+    z-index: 2;
+}
+
+.encuesta{
+    min-height: 100vh;
+    padding: 6px 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -33px 0 20px;
+}
+.encuesta .armario{
+    border-color: var(--glass-bg-color);
+    border: 1.5px solid var(--border-color);
+    padding: 40px 50px;
+    border-radius: 20px;
+}
+
+.armario{
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    background:hsl(0deg 0% 100% / 16%);
+}
+
+h2{
+    font-size: 29px;
+    text-align: center;
+    line-height: 1.2;
+    color: #ecbd0b;
+    font-weight: 700;
+    background-color:  #77101090;
+}
+
+#hero{
+    min-height: 10vh;
+    position: relative;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1a2537;
+    opacity: 0.3;
+    mix-blend-mode: overlay;
+}
+
+.barro{
+    border: none;
+    width: 100%;
+    color:white ;
+    font-size: 20px;
+    background: #771010;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 27px 0;
+}
+
+.barro:hover{
+    background: #b14242;
+}
+
+input{
+    background: rgba(240, 248, 255, 0.71);
+}
+select{
+    background: rgba(240, 248, 255, 0.71);
+}
