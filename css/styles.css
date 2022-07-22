@@ -1,0 +1,184 @@
+:root{
+    
+    --texto-color: #000000;
+    --background-color: #e3dddd;
+    --buton-color: #1bec22;
+    --background-color-cuadros: #ffffff;
+    --tite-color: #1818b8;
+    --bitcoin-color: #cbb221;
+    --banner-color1:#d53dd5;
+    --banner-color2: #15d8ae;
+    --banner-color3: #0d90bc;
+}
+
+.banner-tarjeta{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--banner-color1);
+    font-size: 4rem;
+    color: var(--background-color-cuadros);
+}
+
+.banner-izquierdo{
+    display: grid;
+    padding: 30px;
+    text-align: center;
+    text-justify: center;
+}
+
+.banner-tarjeta
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.solicitar{
+    width: 200px;
+    height: 50px;
+    justify-self: center;
+    background-color: var(--banner-color2);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    
+}
+
+.solicitar:hover{
+    background-color: var(--banner-color3);
+}
+
+.p-banner1{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 1.5rem;
+}
+
+.titulo1 h2 {
+    margin-bottom: 10px;
+}
+
+.parrafo1 p{
+    margin-top: 10px;
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.tarjetas img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.tarjetas article{
+    border:none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px -3px #968E8F;
+}
+
+.titulo-tarjeta{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.tarj-ventajas{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+}
+
+.parrafo-ventajas{
+    padding: 20px;
+    margin: 0;
+}
+
+.tarj-ventajas p{
+    color: gold;
+    background-color: #d53dd5;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.info-tarjeta{
+    padding: 40px;
+}
+
+.agregado{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.agregado
+img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.titulo-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    font-size: 2rem;
+}
+.t-footer{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    color: var(--banner-color1);
+}
+
+.p-footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.banner-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--banner-color1);
+    margin-bottom: 100px;
+    height: 230px;
+}
+
+.titulo-ban-footer h3{
+    font-size: 2rem;
+    color: var(--background-color-cuadros);
+}
+
+.tarjetas article :nth-child(1), .boton-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
