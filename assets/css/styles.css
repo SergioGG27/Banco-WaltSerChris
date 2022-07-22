@@ -184,9 +184,11 @@ body{
 
 .tablero_coin{
     display: flex;
-    justify-content: center;
+    justify-content:last baseline;
     align-content: center;
-    margin-right: -40px;
+    margin-left: 40px;
+    
+    /* margin-right: -40px; */
 }
 
 /* -------------------------BOCK INFOS + BLOCK IMAGE BITCOIN--------------------------------------- */
