@@ -7,13 +7,12 @@
     
     --texto-color: #000000;
     --background-color: #e3dddd;
-    --buton-color: #1bec22;
     --background-color-cuadros: #ffffff;
-    --tite-color: #1818b8;
-    --bitcoin-color: #cbb221;
     --banner-color1:#ecbd0b;
-    --banner-color2: #15d8ae;
-    --banner-color3: #0d90bc;
+    --color-rojo: #ec101a;
+    --color-gris: #323c4c;
+
+
 }
 
 .banner-tarjeta{
@@ -46,14 +45,14 @@ img{
     border: none;
     border-radius: 10px;
     font-size: 1rem;
-    color: var(--bitcoin-color);
-    border: 2px red solid;
+    color: var(--banner-color1);
+    border: 2px var(--color-rojo) solid;
 }
 
 .solicitar:hover{
-    background-color: var(--bitcoin-color);
+    background-color: var(--banner-color1);
     color: var(--texto-color);
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 .p-banner1{
