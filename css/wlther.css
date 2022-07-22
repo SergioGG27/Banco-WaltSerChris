@@ -15,6 +15,9 @@
     --button-hover-color: hsl(0, 0%, 0%, 0.3);
     --blue: hsl(220, 85%, 57%);
     --amarillo-banco: #ecbd0b;
+    --rojo:#ec101a;
+    --gris:#323c4c;
+
 }
 
 .bank {
@@ -34,10 +37,6 @@
     font-size: 18.3px;
 }
 
-.box span {
-    color: #000;
-}
-
 .encuesta {
     position: relative;
     z-index: 2;
@@ -52,7 +51,7 @@
     margin: -33px 0 20px;
 }
 
-.encuesta .armario {
+/* .encuesta .armario {
     border-color: var(--glass-bg-color);
     border: 1.5px solid var(--border-color);
     padding: 40px 50px;
@@ -64,7 +63,7 @@
     max-width: 450px;
     position: relative;
     background: hsl(0deg 0% 100% / 16%);
-}
+} */
 
 h2 {
     font-size: 29px;
@@ -72,13 +71,13 @@ h2 {
     line-height: 1.2;
     color: var(--amarillo-banco);
     font-weight: 700;
-    background-color: #77101090;
+    background-color:var(--rojo)
 }
 
-#hero {
+/* #hero {
     min-height: 10vh;
     position: relative;
-}
+} */
 
 video {
     position: absolute;
@@ -89,7 +88,7 @@ video {
     object-fit: cover;
 }
 
-.capa {
+/* .capa {
     position: absolute;
     top: 0;
     left: 0;
@@ -98,14 +97,14 @@ video {
     background: #1a2537;
     opacity: 0.3;
     mix-blend-mode: overlay;
-}
+} */
 
 .barro {
     border: none;
     width: 100%;
     color: white;
     font-size: 20px;
-    background: #771010;
+    background-color: var(--rojo);
     padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -114,6 +113,10 @@ video {
 
 .barro:hover {
     background: #b14242;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 input {
@@ -199,3 +202,14 @@ input:valid~label {
     padding: 20px 0;
     display: contents;
 }
+
+input[type="date"]::before { 
+	content: attr(data-placeholder);
+	width: 100%;
+}
+
+/* hide our custom/fake placeholder text when in focus to show the default
+ * 'mm/dd/yyyy' value and when valid to show the users' date of birth value.
+ */
+input[type="date"]:focus::before,
+input[type="date"]:valid::before { display: none }
