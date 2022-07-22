@@ -1,3 +1,8 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
 :root{
     
     --texto-color: #000000;
@@ -6,7 +11,7 @@
     --background-color-cuadros: #ffffff;
     --tite-color: #1818b8;
     --bitcoin-color: #cbb221;
-    --banner-color1:#d53dd5;
+    --banner-color1:#ecbd0b;
     --banner-color2: #15d8ae;
     --banner-color3: #0d90bc;
 }
@@ -17,6 +22,7 @@
     background-color: var(--banner-color1);
     font-size: 4rem;
     color: var(--background-color-cuadros);
+    background-image: url("/Banco-WaltSerChris/assets/img/bitCoinBanner.jpeg");
 }
 
 .banner-izquierdo{
@@ -36,15 +42,18 @@ img{
     width: 200px;
     height: 50px;
     justify-self: center;
-    background-color: var(--banner-color2);
+    background-color: var(--texto-color);
     border: none;
     border-radius: 10px;
     font-size: 1rem;
-    
+    color: var(--bitcoin-color);
+    border: 2px red solid;
 }
 
 .solicitar:hover{
-    background-color: var(--banner-color3);
+    background-color: var(--bitcoin-color);
+    color: var(--texto-color);
+    transition: 0.5s;
 }
 
 .p-banner1{
@@ -102,9 +111,10 @@ img{
 
 .tarj-ventajas{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     height: 30px;
+    padding: 10px;
 }
 
 .parrafo-ventajas{
@@ -113,8 +123,8 @@ img{
 }
 
 .tarj-ventajas p{
-    color: gold;
-    background-color: #d53dd5;
+    color: var(--texto-color);
+    background-color: var(--bitcoin-color);
     padding: 5px;
     border-radius: 5px;
 }
@@ -169,6 +179,8 @@ img{
     background-color: var(--banner-color1);
     margin-bottom: 100px;
     height: 230px;
+    background-image: url(/Banco-WaltSerChris/assets/img/bitCoinBanner.jpeg);
+    
 }
 
 .titulo-ban-footer h3{
