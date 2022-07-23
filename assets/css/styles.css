@@ -3,6 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --texto-color: #000000;
+    --background-color: #e3dddd;
+    --background-color-cuadros: #ffffff;
+    --banner-color1:#ecbd0b;
+    --color-rojo: #ec101a;
+    --color-gris: #323c4c;
+}
+
+
+
 
 body{
     background-color: #fff;
@@ -101,19 +112,19 @@ body{
     border-radius: 7px;
     font-size: 20px;
 }
-/* ----------------------BANNER------------------------------------------ */
-.contener_slideshow
-{
+/* ----------------------BANNER PUBLICITARIO------------------------------------------ */
+.contener_slideshow{
     width:1440px;
     height:320px;
     overflow: hidden;
     position: relative;
-    margin-top: 60px;
+    border-radius: 16px;
+    margin: 60px 20px;
+
     
     
 }
-.slid_1, .slid_2, .slid_3
-{
+.slid_1, .slid_2, .slid_3{
     position: absolute;
     width:1440px;
     height:320px;
@@ -123,8 +134,7 @@ body{
 .slid_1{left: 0;}
 .slid_2{left: 1440px;}
 .slid_3{left: 2880px;}
-.contener_slide
-{
+.contener_slide{
     width: 1440px;
     height: 320px;
     left:0px;
@@ -143,8 +153,7 @@ body{
     animation-iteration-count:infinite;
     animation-name: anim_slide;
 }
-@-webkit-keyframes anim_slide 
-{
+@-webkit-keyframes anim_slide{
     0% {left:0px;}
     22% {left:0px;}
     33% {left:-1440px;}
@@ -152,8 +161,7 @@ body{
     66% {left:-2880px;}
     90% {left:-2880px;}
 }
-@-moz-keyframes anim_slide 
-{
+@-moz-keyframes anim_slide {
     0% {left:0px;}
     22% {left:0px;}
     33% {left:-1440px;}
@@ -161,8 +169,7 @@ body{
     66% {left:-2880px;}
     90% {left:-2880px;}
 }
-@-ms-keyframes anim_slide 
-{
+@-ms-keyframes anim_slide {
     0% {left:0px;}
     22% {left:0px;}
     33% {left:-1440px;}
@@ -170,8 +177,7 @@ body{
     66% {left:-2880px;}
     90% {left:-2880px;}
 }
-@keyframes anim_slide 
-{
+@keyframes anim_slide {
     0% {left:0px;}
     22% {left:0px;}
     33% {left:-1440px;}
@@ -182,14 +188,13 @@ body{
 }
 /* tablero de los valores de crypto moneda */
 
-.tablero_coin{
+/* .tablero_coin{
     display: flex;
-    justify-content:last baseline;
+    justify-content:first baseline;
     align-content: center;
-    margin-left: 40px;
-    
-    /* margin-right: -40px; */
-}
+    margin-left: 80px;
+    transform: ;
+} */
 
 /* -------------------------BOCK INFOS + BLOCK IMAGE BITCOIN--------------------------------------- */
 .container_block{
@@ -208,9 +213,23 @@ body{
 @media (max-width: 992px) {
     .container_doc{
     grid-template-columns: repeat(1,1fr);
+    margin-left: 20px;
     }
     .ventanas{
-        width: 200px 8;
+        width: 200px;
+        
+    }
+    .container_img img{
+        display: none;
+    }
+    .footer{
+        grid-template-columns: repeat(1, 1fr);
+        width: 50%;
+        background-color: #323c4c;
+    }
+    .tradingview-widget-container{
+        width:100%;
+    
     }
 }
 
@@ -273,7 +292,7 @@ body{
 /* ------------------------FOOTER REDES + LOGO-------------------------------- */
 
 .footer{
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     width: 1440px;
     background-color: #323c4c;
@@ -299,6 +318,7 @@ body{
     align-items: center;
     width: 120px;
     margin-top: 20px;
+    transform: translateY(20px);
 }
 .redes_ico{
     display: flex;
@@ -320,6 +340,7 @@ body{
     width: 300px;
     border: none;
     margin:0 30px;
+    transform: translate(-8px, 30px);
 }
 /* -------------------FOOTER MAPA-------------------------- */
 .container_foot2{
@@ -332,6 +353,7 @@ body{
     border: none;
     margin-top: 70px;
     padding: 0 0 0 10px;
+    transform: translate(44px, 25px);
 
 }
 
