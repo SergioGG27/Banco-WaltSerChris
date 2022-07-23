@@ -75,6 +75,10 @@ body{
 .btn_navbar{
     margin-left: 20px;
 }
+.btn_navbar a   {
+    background-color: none;
+    color: #ecbd0b;
+}
 .ico_ingresar{
     width: 25px;
     margin: 0 10px;
@@ -343,7 +347,6 @@ body{
 /* ---------------MODAL------------------------------ */
 a {
     text-decoration: none;
-    background-color: #ffffff;
 }
 
 .modal{
