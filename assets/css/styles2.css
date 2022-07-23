@@ -21,7 +21,7 @@
     background-color: var(--banner-color1);
     font-size: 4rem;
     color: var(--background-color-cuadros);
-    background-image: url("/Banco-WaltSerChris/assets/img/bitCoinBanner.jpeg");
+    background-image: url("../img/bitCoinBanner.jpeg");
 }
 
 @media (max-width:992px){
@@ -206,7 +206,7 @@ img{
     background-color: var(--banner-color1);
     margin-bottom: 100px;
     height: 230px;
-    background-image: url(/Banco-WaltSerChris/assets/img/bitCoinBanner.jpeg);
+    background-image: url(../img/bitCoinBanner.jpeg);
     
 }
 
